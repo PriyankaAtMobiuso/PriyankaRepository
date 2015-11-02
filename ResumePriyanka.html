@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="resumeStylesheet.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<script>
+		var homeCounter=0;
+		var emailCounter=0;
+		var phCounter=0;
+		function javaClick() 
+		{
+			var divElement = document.createElement("div");  
+            divElement.id = "javaDiv";  
+            divElement.className = "circle";
+            document.getElementById("java").innerHTML = " ";
+            divElement.innerHTML = "60%";  
+            document.getElementById('java').appendChild(divElement);  
+  
+        }
+        
+        function javaMouseOut()
+        {
+            document.getElementById("java").innerHTML = "Java";
+        }
+        
+        function dbClick() 
+		{
+            var divElement = document.createElement("div");  
+            divElement.id = "dbDiv";
+            divElement.className = "circle";
+            document.getElementById("database").innerHTML = " ";
+            divElement.innerHTML = "50%";  
+            document.getElementById('database').appendChild(divElement);  
+        }
+        
+        function dbMouseOut()
+        {
+            document.getElementById("database").innerHTML = "DB";
+        }
+        
+        function webClick() 
+		{
+			var divElement = document.createElement("div");  
+            divElement.id = "webDiv";
+            divElement.className = "circle";
+            document.getElementById("web").innerHTML = " ";
+            divElement.innerHTML = "60%";  
+            document.getElementById('web').appendChild(divElement);  
+        }
+        
+        function webMouseOut()
+        {
+            document.getElementById("web").innerHTML = "Web";
+        }
+        
+        function changeHome()
+        {
+            if(homeCounter===0)
+            {
+            document.getElementById("home").innerHTML = "Amey              Complex,Vishnu Nagar,Wada";
+             homeCounter=1;
+            }
+            else
+            {
+                document.getElementById("home").innerHTML = " " ;
+                homeCounter=0;
+            }
+        }
+        
+        function changePh()
+        {
+            if(phCounter===0)
+            {
+            document.getElementById("ph").innerHTML =                     "8554954721";
+            phCounter=1;
+            }
+            
+            else
+            {
+                document.getElementById("ph").innerHTML =                     " ";
+            phCounter=0;
+            }
+        }
+        
+        function changeEmail()
+        {
+            if(emailCounter===0)
+            {
+            document.getElementById("email").innerHTML =                   "priyanka.chaudhari03@gmail.com";
+                emailCounter=1;
+            }
+            
+            else
+            {
+                document.getElementById("email").innerHTML =                     " ";
+            emailCounter=0;
+            }
+        }
+        
+		</script>
+		<title></title>
+	</head>
+	<body>
+	    <div class="right">
+	    <center><p id="name">Priyanka Chaudhari</p></center>
+	    <div class="line"></div>
+	    <div class="highlight">CONTACT</div>
+	    <img class="address" src="http://www.vesselbuildingsolutions.com/images/home.png" button type="button" onclick="changeHome()"/>
+	    <div id="home"></div>
+	    
+	    <img class="address" src="http://lh5.ggpht.com/_ohJ_2c3xtGA/TOTGkwuZfWI/AAAAAAAABmg/CduHyJvOukw/email%20symbol%5B8%5D.jpg?imgmax=800"  button type="button" onclick="changeEmail()"/>
+	    <div id="email"></div>
+	     
+	    <img class="address" src="http://hubflow.com/images/symbol-80x80-11.png"  button type="button" onclick="changePh()"/>
+	    <div id="ph"></div> 
+	    
+	    <div class="highlight">SKILLS</div>
+	    
+	    <div class="circle" id="java" button type="button" onmouseover="javaClick()" onmouseout="javaMouseOut()">Java
+	    </div>
+	    <div class="circle" id="database"  button type="button" onmouseover="dbClick()" onmouseout="dbMouseOut()">DB</div>
+	    
+	    <div class="circle" id="web"  button type="button" onmouseover="webClick()" onmouseout="webMouseOut()">Web</div>
+	    </div>
+	    <div class="left">
+	    <div id="profilepic"><img src="http://megaicons.net/static/img/icons_title/8/60/title/users-user-female-icon.png"></div>
+	    <div class="high">EDUCATION</div><br/>
+	    <div>
+	    <table id="education" border=2px>
+	    <th>Course</th>
+	    <th>University</th>
+	    <th>Institution</th>
+	    <th>Aggregate</th>
+	    
+	    <tr>
+	    <td>PG-DAC</td>
+	    <td>CDAC</td>
+	    <td>VITA</td>
+	    <td>69%</td>
+	    </tr>
+	    
+	    <tr>
+	    <td>BE-IT</td>
+	    <td>Mumbai University</td>
+	    <td>YTCEM</td>
+	    <td>67%</td>
+	    </tr>
+	    
+	    <tr>
+	    <td>H.S.C.</td>
+	    <td>Maharashtra State Board</td>
+	    <td>A.L.C.Jr College</td>
+	    <td>60%</td>
+	    </tr>
+	    
+	    <tr>
+	    <td>S.S.C.</td>
+	    <td>Maharashtra State Board</td>
+	    <td>P.J.Highschool</td>
+	    <td>69%</td>
+	    </tr>
+	    </div>
+	    <br/>
+	     <div class="high">ACADEMICS PROJECTS</div>
+	     <ul>
+	     <li><h4 class="projectTitle">Task Management System</h4></li>
+	     </ul>
+	     <p class="projectDesc">
+	     TMS will be used to track & collaborate work among employee within organization.It is used to efficiently manage the task assigned to the employees & also help to track their performance. 
+	     </p><br/>
+	     <div class="line"></div>
+	     <ul>
+	     <li><h4 class="projectTitle">Online Shopping Cart</h4></li>
+	     </ul>
+	     <p class="projectDesc">
+	     It is a web application enabling web clent to shop online.Catalogue is shown to the client of the items which are available.Client can purchase item,remove item from his cart also he can update quantity.
+	     </p>
+	
+	    <div class="high">HOBBIES</div>
+	   
+	    <img class="hobbies" src="http://0.s3.envato.com/files/82924053/PaintBrush-03-TB.jpg" />
+	    
+	    <img class="hobbies" src="https://0.s3.envato.com/files/65946412/music_thumb.jpg" />
+	    
+	    <img class="hobbies" src="http://4.bp.blogspot.com/-xC-dwpikiN4/Tx0EjX1vEOI/AAAAAAAAARQ/d5SkrxHD0sI/s320/launcher-icon-books.png" />
+	    
+	    <img class="hobbies" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xap1/v/t1.0-1/c0.16.80.80/p80x80/11949525_896753587079552_4364902957975397572_n.jpg?oh=47fb017bd65881bcf7ac3ac0e074e8bb&oe=5685EE4C&__gda__=1452767357_eafbb8984ab14ee55c08ebc2d5c56cb0" />
+	    
+	    <img class="hobbies" src="http://thumbs2.ebaystatic.com/m/mVIkBTPmkqiNIp5Z9tpo3Cg/80.jpg" />
+	  
+	    </div>
+	</body>
+</html>

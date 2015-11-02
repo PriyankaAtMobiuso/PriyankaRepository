@@ -1,0 +1,198 @@
+.right{
+    background-color:#FFFAF0;
+    float:right;
+    color:#663399;
+    font-size:30px;
+    height:300%;
+    width:30%;
+}
+
+.left{
+    background-color:#445588;
+    width:70%;
+    height:180%;
+    float:left;
+    color:#FFDAB9;
+    font-size:20px;
+}
+
+#name{
+    font-family:Franklin Gothic Medium;
+    font-size:40px;
+}
+
+.line{
+    border:1px solid #DB7093;
+    margin-left:15px;
+    margin-right:15px;
+    margin-top:-30px;
+}
+
+.highlight{
+    font-size:25px;
+    margin:50px 20px 5px 15px;
+    background-color:#FFDAB9;
+    padding:10px;
+    font-family:Rockwell;
+    border-radius:5px;
+    border:1px solid #663399;
+
+}
+
+.address{
+    margin-left:30px;
+    margin-right:15px;
+    margin-top:10px;
+    display:inline-block;
+    position: relative;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: 2; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  {left:50px; top:0px;}
+    50%  {left:100px; top:0px;}
+    75%  {left:150px; top:0px;}
+    100% {left:200px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  {left:50px; top:0px;}
+    50%  {left:100px; top:0px;}
+    75%  {left:150px; top:0px;}
+    100% {left:200px; top:0px;}
+}
+
+.circle{
+    border:15px solid #FFE4E1;
+    border-radius:100%;
+    display:inline-block;
+    width:50px;
+    height:50px;
+    margin-left:20px;
+    margin-top:20px;
+    font-size:20px;
+    padding:5px;
+    text-align:center;
+}
+
+#profilepic{
+    border-radius:100%;
+    width:20%;
+    height:20%;
+    margin-top:50px;
+    margin-left:45%;
+}
+
+.high{
+    font-size:25px;
+    background-color:#FFFAF0;
+    color:#663399;
+    font-family:Rockwell;
+    border-radius:5px;
+    border:1px solid #C71585;
+    clear:both;
+    padding:5px;
+}
+
+#education{
+    border:2px solid #FFF0F5;
+    color:#FFDAB9;
+    width:100%;
+}
+
+th{
+    padding:5px;
+    color:#FFB6C1;
+    font-family:Tahoma;
+    font-weight:strong;
+}
+
+td{
+    padding:8px;
+    color:#FFDAB9;
+    font-family:Gill Sans;
+    text-align:center;
+}
+
+#hobbies{
+    list-style-type: square;
+}
+
+#home{
+    display:inline-block;
+    width:250px;
+    height:75px;
+    font-size:20px;
+    margin-top:-50px;
+}
+
+#ph{
+    display:inline-block;
+    width:250px;
+    height:75px;
+    font-size:20px;
+}
+
+#email{
+    display:inline-block;
+    width:250px;
+    height:75px;
+    font-size:20px;
+}
+
+.hobbies{
+    margin-top:20px;
+    margin-left:50px;
+    margin-right:30px;
+}
+
+.projectTitle{
+    text-shadow: 1px 1px 2px #DB7093, 0 0 25px pink, 0 0 5px darkblue;
+}
+
+.projectDesc{
+   margin-left:50px;
+   margin-top:-10px;
+   color:#FFB6C1;
+}
+
+#javaDiv{  
+    border:15px dotted #FF69B4;
+    width:50px;
+    height:50px;
+    margin-left:-20px;
+    margin-top:-20px;
+    font-size:20px;
+    padding:5px;
+    text-align:center;
+}
+
+#dbDiv{  
+    border:15px dotted #FF69B4;
+    width:50px;
+    height:50px;
+    margin-left:-20px;
+    margin-top:-50px;
+    font-size:20px;
+    padding:5px;
+    text-align:center;
+}    
+
+#webDiv{  
+    border:15px dotted #FF69B4;
+    width:50px;
+    height:50px;
+    margin-left:-20px;
+    margin-top:-100px;
+    font-size:20px;
+    padding:5px;
+    text-align:center;
+} 
