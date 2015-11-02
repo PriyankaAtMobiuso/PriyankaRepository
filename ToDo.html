@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>To-Do List</title>
+		<link type="text/css" rel="stylesheet" href="todostyle.css">
+		<script>
+		var element;
+		var d=0;
+		function addToList()
+			{
+				d++;
+				var listElement=document.createElement("li");
+				var data = document.getElementById("myText").value;
+				var html='<div id="div-'+d+'">'+data+'<img src="Red_cross_20.png" id="deleteImg" button type="button" onclick="removeFromList(this)" /></div>';
+				var myDiv=document.createElement("DIV");
+				myDiv.id="myDiv";
+				myDiv.innerHTML=html;
+				listElement.appendChild(myDiv);
+				element=document.getElementById("listItems");
+				element.insertBefore(listElement,element.childNodes[0]);
+				document.getElementById("myText").value=" ";
+				
+			}	
+			
+			function removeFromList(control)
+			{
+				control.parentNode.remove();
+			}	
+		</script>
+	</head>
+
+	<body>
+		<form id="bg">
+		<br/>
+		<p id="ttl">To-Do List</p>
+		<input type="text" name="todo" id="myText" placeholder="Enter ur To-Do task"/>
+		<input type="button" value="Add" id="add" button type="button" onclick="addToList()"/>
+		<ul id="listItems">
+		</ul>
+		</form>
+	</body>
+</html>
